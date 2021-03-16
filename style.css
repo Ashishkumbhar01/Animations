@@ -1,0 +1,38 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-size: 15pt;
+}
+.mainDiv {
+width:100%;
+height:100vh;
+background-color:rgb(58,85,200);
+display:flex;
+justify-content:center;
+align-items:center;
+}
+.a, .b, .c, .d, .e, .f, .g{
+width:5px;
+height:70px;
+background-color:aqua;
+border-radius:10px;
+margin:10px;
+}
+.a, .c, .e, .g{
+animation:jum-down 1.5s linear infinite;
+}
+.b, .d, .f{
+animation:jum-up 1.5s linear infinite;
+animation-delay:.9s;
+}
+@keyframes jum-down{
+0%{transform:scaleY(1);}
+50%{transform:scaleY(0.2);}
+100%{transform:scaleY(1);}
+}
+@keyframes jum-up{
+0%{transform:scaleY(1);}
+50%{transform:scaleY(0.2);}
+100%{transform:scaleY(1);}
+}
